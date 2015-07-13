@@ -12,6 +12,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'cancancan'
+gem 'aws-sdk', '~>2'
+gem 'momentjs-rails'
+gem 'fullcalendar-rails'
 group :development, :test do
      gem 'sqlite3'
 end

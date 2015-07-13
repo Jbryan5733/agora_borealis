@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Role.where(name: :admin).first_or_create
+Role.where(name: :artist).first_or_create
+Role.where(name: :media).first_or_create
+Role.where(name: :employee).first_or_create
+Role.where(name: :customer).first_or_create
