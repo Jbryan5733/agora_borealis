@@ -77,5 +77,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   # change this to actual host name asap!!!
-  config.action_mailer.default_url_options = { :host =>'localhost:3000' }
+  config.action_mailer.default_url_options = { :host =>'https://quiet-bastion-7268.herokuapp.com/' }
 end
