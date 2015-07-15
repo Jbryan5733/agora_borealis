@@ -81,6 +81,6 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-a {
+ul.social-network a {
  background-color: #D3D3D3;   
 }

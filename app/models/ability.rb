@@ -6,17 +6,24 @@ class Ability
     #
        user ||= User.new # guest user (not logged in)
        if user.role.admin?
-         can :manage, :all
-        end
-       if user.role.employee?
-         can :read, :all
-        end
-        if user.role.artist?
-         can :read, :all
-          if user.role.media?
-         can :read, :all
-          if user.role.customer?
-         can :read, :all
+        can :manage, :all
+       end
+
+      if user.role.employee?
+       can :read, :all
+      end
+      
+      if user.role.artist?
+       can :read, :all
+      end
+
+      if user.role.media?
+       can :read, :all
+      end
+
+      if user.role.customer?
+       can :read, :all
+      end
 
     #
     # The first argument to `can` is the action you are giving the user 

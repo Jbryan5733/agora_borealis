@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get "artist_profiles" => "pages#artist_profiles"
   get "contact_us" => "pages#contact_us"
   get "blog" => "pages#blog"
-
+  get "link" => "pages#link"
   
 
 

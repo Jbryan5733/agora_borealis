@@ -42,17 +42,14 @@
   <div class="field">
     <%= f.label "Please select what user type you are." %><br />
     
-    <select class="form-control">
-      <option>I am an employee of the Agora Borealis</option>
-      <option>I am an artist carried by Agora Borealis</option>
-      <option>I am with the media</option>
-      <option>I am a customer </option>
-      <option>I am just looking</option>
-    </select>
-    <%= f.label "Would you like to receive our newsletter?"%>
-    <%= check_box_tag(:newsletter) %>
-    <%= label_tag(:newsletter, "I would love to receive your newsletter!") %>
+    <%= f.collection_select :role_id, Role.order(:name), :id, :name, include_blank: true %>
     
+  </div>
+
+  <div class="field">
+    <%= f.label "Would you like to receive our newsletter?"%>
+    <%= f.check_box :newsletter %><br />
+     
   </div>
     
   <div class="actions">

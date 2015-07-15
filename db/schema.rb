@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150711004323) do
+ActiveRecord::Schema.define(version: 20150714012251) do
 
   create_table "events", force: :cascade do |t|
     t.string   "title"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20150711004323) do
     t.string   "address"
     t.string   "phone_number"
     t.integer  "role_id"
+    t.boolean  "newsletter"
   end
 
   add_index "users", ["approved"], name: "index_users_on_approved"
