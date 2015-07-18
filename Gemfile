@@ -15,8 +15,10 @@ gem 'cancancan'
 gem 'aws-sdk', '~>2'
 gem 'momentjs-rails'
 gem 'fullcalendar-rails'
+gem 'activeadmin', github: 'activeadmin'
 group :development, :test do
      gem 'sqlite3'
+
 end
 
 group :production do

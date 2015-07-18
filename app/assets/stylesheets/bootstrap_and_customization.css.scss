@@ -1,3 +1,10 @@
 @import "bootstrap-sprockets"; 
 @import 'bootstrap';
-body { padding-top: 70px; }
+body {
+	padding-top: 70px;
+}
+
+body.contact_us {
+	background: image-url('Agora_Borealis_Painting_9377.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
