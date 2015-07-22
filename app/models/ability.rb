@@ -10,7 +10,7 @@ class Ability
        end
 
       if user.role.employee?
-       can :read, :all
+       can :read, :all :create, :articles 
       end
       
       if user.role.artist?
