@@ -11,4 +11,6 @@ class PagesController < ApplicationController
   end
   def links
   end
+  def about_us
+  end
 end

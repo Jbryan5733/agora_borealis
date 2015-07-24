@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "contact_us" => "pages#contact_us"
   get "blog" => "pages#blog"
   get "link" => "pages#link"
-  
+  get "about_us" => "pages#about_us"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
