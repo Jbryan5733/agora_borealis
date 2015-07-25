@@ -10,5 +10,7 @@
   <%= @pic.medium %>
 </p>
 
+<% if @pin.user == current_user %>
 <%= link_to 'Edit', edit_pic_path(@pic) %> |
 <%= link_to 'Back', pics_path %>
+<% end %>

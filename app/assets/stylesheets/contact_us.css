@@ -1,3 +1,1 @@
-body
-  background:
-    image: assets/Agora Borealis Painting_9377.jpg("Agora Borealis Painting_9377.jpg")
+background: url(assets/Agora Borealis Painting_9377.jpg("Agora Borealis Painting_9377.jpg")) repeat-x center top;
