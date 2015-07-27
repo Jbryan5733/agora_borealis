@@ -18,9 +18,10 @@ class PicsController < ApplicationController
   end
 
   def create
-    @pic = current_user.pics.build(pic_params)
+    @pic = current_user.pics.build(pic_params) 
+
     if @pic.save
-      redirect_to @pic, notice: 'Art was successfully created.'
+      redirect_to @pic, notice: 'Art was successfully uploaded.'
     else
       render action: 'new'
     end
@@ -52,6 +53,6 @@ class PicsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pic_params
-      params.require(:pic).permit(:description)
+      params.require(:pic).permit(:description, :image)
     end
 end

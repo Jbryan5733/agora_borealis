@@ -16,6 +16,9 @@ gem 'aws-sdk', '~>2'
 gem 'momentjs-rails'
 gem 'fullcalendar-rails'
 gem 'activeadmin', github: 'activeadmin'
+gem 'paperclip', github: 'thoughtbot/paperclip'
+
+
 group :development, :test do
      gem 'sqlite3'
 

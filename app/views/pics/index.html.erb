@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Artist's Gallery</h1>
 
@@ -15,11 +14,12 @@
   <tbody>
     <% @pics.each do |pic| %>
       <tr>
+        <td><%= image_tag pic.image.url(:medium) %></td>
         <td><%= pic.description %></td>
         <td><%= pic.medium %></td>
-        <td><%= pic.user.name  if pin.user %></td>
+        <td><%= pic.user.email  if pic.user %></td>
         <td><%= link_to 'Show', pic %></td>
-        <% if pin.user == current_user %>
+        <% if pic.user == current_user %>
         <td><%= link_to 'Edit', edit_pic_path(pic) %></td>
         <td><%= link_to 'Destroy', pic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
