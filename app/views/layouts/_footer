@@ -1,19 +1,7 @@
 <footer>
 </br>
 </br>
-        <ul>
-  <li>
-    <%= link_to "http://www.facebook.com/user" do %>
-      <%= image_tag 'facebook.png' %>
-    <% end %>
-  </li>
-  <li>
-    <%= link_to "http://www.twitter.com/user" do %>
-      <%= image_tag 'twitter.png' %>
-    <% end %>
-  </li>
-  # etc.
-</ul>
+ 
 
         <p>&copy; 2015 the Agora Borealis.</p>
       </footer>
